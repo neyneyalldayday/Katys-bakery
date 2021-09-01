@@ -1,12 +1,17 @@
-import * as React from "react"
+import * as React from "react";
+import HeroSection from "../components/HeroSection";
+import Layout from "../components/layout"
 
 
 
 
-const IndexPage = () => {
-  return (
-    <main>cakes n shit</main>
-  )
-}
+const IndexPage = () => (
+     <Layout>
+       <HeroSection />
+    </Layout>
+
+)
+  
+
 
 export default IndexPage
