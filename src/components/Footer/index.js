@@ -24,9 +24,9 @@ const Footer = () => {
               <SocialMediaWrap>
                   <SocialLogo to="/">
                       <SocialIcon />
-                      bake
+                      weBake
                   </SocialLogo>
-                  <WebsiteRights>bake{new Date().getFullYear()}</WebsiteRights>
+                  <WebsiteRights>S.B{new Date().getFullYear()}</WebsiteRights>
                   <SocialIcons>
                       <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                          <FaFacebook /> 

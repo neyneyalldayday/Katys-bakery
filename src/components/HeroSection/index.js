@@ -13,7 +13,7 @@ function HeroSection() {
            </HeroBg>
            <HeroContent>
                <HeroItems>
-                   <HeroH1>cakes n stuff</HeroH1>
+                   <HeroH1>Sherry'ng Bakery</HeroH1>
                    <HeroP>check it out</HeroP>
                    <Button fontBig big primary as={Link} to="/packages">Interested?</Button>
                </HeroItems>          

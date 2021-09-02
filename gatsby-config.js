@@ -13,11 +13,24 @@ module.exports = {
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
+                
       options: {
         name: "images",
         path: "./src/images/",
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-source-stripe",
+      options: {
+        objects: ["Price"],
+        secretKey: process.env.STRIPE_SECRET_KEY,
+        downloadFiles: false,
+      },
+    },
   ],
 };
+
+require("dotenv").config({
+  path: `.env${process.env.NODE_ENV}`,
+})

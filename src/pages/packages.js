@@ -12,7 +12,7 @@ const Packages = () => {
 
   return(
     <Layout >
-    <h1 className="works">the shop</h1>
+    <h1 className="works">Goodies</h1>
     <Shop />      
     </Layout>
   )

@@ -20,7 +20,7 @@ const buttonDisabledStyles = {
 let stripePromise
 const getStripe = () => {
   if (!stripePromise) {
-    stripePromise = loadStripe("pk_test_51JKnrdJCLEsDyud23BzCg1ea7W8L14v3UTFPv8gEPpXtu6JOcjJl7TefMNJD6pF3SvC13BjXTpyBorTg3eE3CUql00vprCZAlq")
+    stripePromise = loadStripe("pk_test_51JNN6MKUVY5Zu28JBbOULqZ8ynykj6ZXiBPlnYPnZ2RIjFGVwCvHnHGYFUxug0HiMlEJgZlIYUIz0Y4CXOFAwYGt00vZuxhWbx")
   }
   return stripePromise
 }
@@ -35,8 +35,8 @@ const Checkout = () => {
     const stripe = await getStripe()
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
-      lineItems: [{ price: "price_1GriHeAKu92npuros981EDUL", quantity: 1 }],
-      successUrl: `http://localhost:8000/page-2/`,
+      lineItems: [{ price: "price_1JVK5fKUVY5Zu28JsD4DhWfA", quantity: 1 }],
+      successUrl: `https://buy.stripe.com/test_5kAfZQbf960YfjWbII`,
       cancelUrl: `http://localhost:8000/`,
     })
 

@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 const AboutPage = () => (
     <Layout>
         <About>  
-       <h1 >About Me</h1>
+       <h1 >About Sherry'ng</h1>
        </About>
     </Layout>
  
