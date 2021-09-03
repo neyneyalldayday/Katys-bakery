@@ -4,7 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 
 export default function Products(props) {
   return (
-      <></>
+    <></>
     // <StaticQuery
     //   query={graphql`
     //     query ProductPrices {

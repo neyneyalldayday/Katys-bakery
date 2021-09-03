@@ -1,5 +1,6 @@
 import React from 'react';
-import Checkout from '../checkout';
+// import Checkout from '../checkout';
+
 import "./shop.css"
 
 
@@ -9,9 +10,10 @@ const Shop = () => {
         <div className="shop-container">
            <h1>Shop treats</h1>
             <div className="shop-image-container">
+            {/* <Checkout />   
             <Checkout />   
-            <Checkout />   
-            <Checkout />       
+            <Checkout />  */}
+               
             </div>
         </div>
             

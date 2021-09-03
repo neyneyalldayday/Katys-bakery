@@ -1,3 +1,10 @@
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -8,6 +15,14 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Price"],
+        secretKey: process.env.GATSBY_STRIPE_SECRET_KEY,
+        downloadFiles: false,
+      },
+    },
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -20,17 +35,7 @@ module.exports = {
       },
       __key: "images",
     },
-    {
-      resolve: "gatsby-source-stripe",
-      options: {
-        objects: ["Price"],
-        secretKey: process.env.STRIPE_SECRET_KEY,
-        downloadFiles: false,
-      },
-    },
+    
   ],
 };
 
-require("dotenv").config({
-  path: `.env${process.env.NODE_ENV}`,
-})
