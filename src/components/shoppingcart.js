@@ -14,7 +14,7 @@ const ShoppingCart = () => (
         <h1>Checkout</h1>
         <h2>
             With{' '}
-            <a href="https://use-shopping-cart.netlify.app/">use-shopping-cart</a>
+            <a href="https://use-shopping-cart.netlify.app/">sherry'ng</a>
         </h2>
         <CartProvider
         mode="client-only"
