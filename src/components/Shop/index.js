@@ -1,4 +1,5 @@
 import React from 'react';
+import ShoppingCart from '../shoppingcart';
 // import Checkout from '../checkout';
 
 import "./shop.css"
@@ -13,7 +14,7 @@ const Shop = () => {
             {/* <Checkout />   
             <Checkout />   
             <Checkout />  */}
-               
+              <ShoppingCart /> 
             </div>
         </div>
             

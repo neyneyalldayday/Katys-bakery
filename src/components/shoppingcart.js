@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Layout from '../components/layout';
-import Skus from '../components/Products/Skus';
-import CartOverview from '../components/CartOverview';
+
+import Skus from './Products/Skus';
+import CartOverview from './CartOverview';
 
 import { loadStripe } from '@stripe/stripe-js';
 import { CartProvider } from 'use-shopping-cart';
@@ -10,7 +10,7 @@ import { CartProvider } from 'use-shopping-cart';
 const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY);
 
 const ShoppingCart = () => (
-    <Layout>
+    <>
         <h1>Checkout</h1>
         <h2>
             With{' '}
@@ -28,7 +28,7 @@ const ShoppingCart = () => (
             <CartOverview />
             <Skus />
         </CartProvider>
-    </Layout>
+    </>
 );
 
 export default ShoppingCart;
