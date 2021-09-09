@@ -34,6 +34,7 @@ export default (props) => (
           }
         }
       }
+     
     }
   `}
   render={({ prices }) => (

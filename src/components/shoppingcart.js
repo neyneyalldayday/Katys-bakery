@@ -14,12 +14,12 @@ const ShoppingCart = () => (
         <h1>Checkout</h1>
         <h2>
             With{' '}
-            <a href="https://use-shopping-cart.netlify.app/">sherry'ng</a>
+            <a href="https://use-shopping-cart.netlify.app/">Sherry'ng</a>
         </h2>
         <CartProvider
         mode="client-only"
         stripe={stripePromise}
-        successUrl={`${window.location.origin}/page-2/`}
+        successUrl={`${window.location.origin}../pages/shoppingcartpage/`}
         cancelUrl={`${window.location.origin}/`}
         currency="USD"
         allowedCountries={['US']}

@@ -10,6 +10,22 @@ const cardStyles = {
     alignItems: 'center',
     padding: '1rem',
     marginBottom: '1rem',
+    margin: '5rem',
+    boxShadow: '5px 5px 25px 0 rgba(46,61,73,.2)',
+    backgroundColor: '#fff',
+    borderRadius: '6px',
+    maxWidth: '60rem',
+    
+    
+   
+  };
+const imageStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    padding: '1rem',
+    marginBottom: '1rem',    
     boxShadow: '5px 5px 25px 0 rgba(46,61,73,.2)',
     backgroundColor: '#fff',
     borderRadius: '6px',
@@ -37,7 +53,7 @@ const cardStyles = {
 
       return(
           <div style={cardStyles}>
-              <img src={sku.image} alt="" />
+              <img style={imageStyles} src={sku.image} alt="" />
               <h4>{sku.name}</h4>
               <p>
                   Price:{' '}

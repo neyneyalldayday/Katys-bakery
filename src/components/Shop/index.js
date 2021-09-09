@@ -10,8 +10,7 @@ const Shop = () => {
         <>
         <div className="shop-container">
            <h1>Shop treats</h1>
-            <div className="shop-image-container">
-            
+            <div className="shop-image-container">            
               <ShoppingCart /> 
             </div>
         </div>
