@@ -35,7 +35,7 @@ const NavLogo = styled(Link)`
 color: #141414;
 justify-self: flex-start;
 cursor: pointer;
-text-size: 1.5rem;
+font-size: 1.5rem;
 display: flex;
 align-items: center;
 `;
