@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-container">
         <h1>About Sherry'ng</h1>
         <p>we make cakes</p>                      
-        <p>And smoke weed n shit</p>                      
+        <p>come eat some cakes</p>                      
         <div className="hero-btns">
        <Button className="butt" fontBig  primary as={Link} to="/email">Contact me!</Button>
         </div>
