@@ -1,7 +1,5 @@
 import React from 'react';
 import ShoppingCart from '../shoppingcart';
-
-
 import "./shop.css"
 
 

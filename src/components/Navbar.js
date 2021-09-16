@@ -7,7 +7,7 @@ import {Link} from 'gatsby'
 
 
 const Nav = styled.nav`
-background: ${({ active }) => active ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100% )"};
+background: ${({ active }) => active ? "#EB65B2 " : "linear-gradient(to bottom, rgba(235,101,178,0.9) 0%, rgba(235,101,178,0) 100% )"};
 height: 80px;
 display: flex;
 justify-content: center;

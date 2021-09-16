@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import { Button } from '../ButtonElements';
+import img from '../../images/BakeryLogo.png';
 
 
 
@@ -9,13 +10,10 @@ import { Button } from '../ButtonElements';
 function HeroSection() {
     return (
         <HeroContainer>            
-           <HeroBg className="image">
-                      
+           <HeroBg>   
            </HeroBg>
            <HeroContent>
-               <HeroItems>
-                   <HeroH1>Sherry'ng Bakery</HeroH1>
-                   <HeroP>check it out</HeroP>
+               <HeroItems>                   
                    <Button fontBig big primary as={Link} to="/packages">Interested?</Button>
                </HeroItems>          
            </HeroContent>           
@@ -27,8 +25,8 @@ function HeroSection() {
 
 
 
-  const HeroContainer = styled.div`
-  background: #EB65B2;
+  const HeroContainer = styled.div`     
+
   display: flex;  
   justify-content: center;
   align-items: center;
@@ -39,27 +37,24 @@ function HeroSection() {
   color: #fff;
   `;
 
-  const HeroBg = styled.div`
-  position: absolute;
+  const HeroBg = styled.div` 
+ background-image: url(${img}); 
+ position: absolute;
+ background-repeat: no-repeat;
+ background-position: center;
+ max-height: 100vh;  
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
- 
+  @media screen and (max-width: 480px) {
+      min-width: 15rem;
+      height: 100vh;
+  }
   `;
 
-  const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  
-  `;
 
-  const HeroContent = styled.div`
+  const HeroContent = styled.div` 
   z-index: 3;
   height: calc(100vh - 80px);
   max-height: 100%;
@@ -69,7 +64,8 @@ function HeroSection() {
   const HeroItems = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
+  
   align-items: center;
   text-align: center;
   height: 100vh;
@@ -77,21 +73,10 @@ function HeroSection() {
   padding: 0;
   color: #fff;
   line-height: 1.1;
-  font-weight: bold;
+  font-weight: bold;  
+  `;
+
   
-  `;
-
-  const HeroH1 = styled.h1`
-  font-size: clamp(1.5rem, 6vw, 4rem);
-  margin-bottom: 1.5rem;
-  letter-spacing: 3px;
-  padding: 0 1rem;
-  `;
-
-  const HeroP = styled.p`
-  font-size: clamp(1rem, 3vw, 3rem);
-  margin-bottom: 2rem;
-  `;
   
   
 
