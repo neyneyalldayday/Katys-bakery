@@ -9,8 +9,8 @@ import { Button } from '../ButtonElements';
 function HeroSection() {
     return (
         <HeroContainer>            
-           <HeroBg>
-                         
+           <HeroBg className="image">
+                      
            </HeroBg>
            <HeroContent>
                <HeroItems>

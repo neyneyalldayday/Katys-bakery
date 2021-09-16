@@ -1,8 +1,9 @@
 .about-container {
-    background: url('../../images/about.jpg') center center/
-    cover no-repeat;
+    background: url('../../images/heropic.png') center center/    
+    contain no-repeat;    
+    
     height: 100vh;
-    width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
