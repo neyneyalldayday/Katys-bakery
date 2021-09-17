@@ -3,15 +3,17 @@ import {Link} from 'gatsby';
 import styled from 'styled-components';
 import { Button } from '../ButtonElements';
 import img from '../../images/BakeryLogo.png';
+import img2 from '../../images/BakeryLogoM.png'
 
 
 
 
 function HeroSection() {
     return (
-        <HeroContainer>            
-           <HeroBg>   
-           </HeroBg>
+        <HeroContainer>
+                     
+           <HeroBg/> 
+         
            <HeroContent>
                <HeroItems>                   
                    <Button fontBig big primary as={Link} to="/packages">Interested?</Button>
@@ -26,7 +28,7 @@ function HeroSection() {
 
 
   const HeroContainer = styled.div`     
-
+    
   display: flex;  
   justify-content: center;
   align-items: center;
@@ -37,20 +39,27 @@ function HeroSection() {
   color: #fff;
   `;
 
+ 
+
   const HeroBg = styled.div` 
- background-image: url(${img}); 
- position: absolute;
- background-repeat: no-repeat;
- background-position: center;
- max-height: 100vh;  
+  background-image: url(${img}); 
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 100vh;
+  
+  object-fit: contain;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  @media screen and (max-width: 480px) {
-      min-width: 15rem;
-      height: 100vh;
-  }
+ 
+
+  @media screen and (max-width: 768px) {
+    background-image: url(${img2});       
+
+       
+    }
   `;
 
 
