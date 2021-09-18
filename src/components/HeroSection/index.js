@@ -16,7 +16,7 @@ function HeroSection() {
          
            <HeroContent>
                <HeroItems>                   
-                   <Button fontBig big primary as={Link} to="/packages">Interested?</Button>
+                   <Button fontbig big primary as={Link} to="/packages">Interested?</Button>
                </HeroItems>          
            </HeroContent>           
         </HeroContainer>

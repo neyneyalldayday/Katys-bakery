@@ -4,14 +4,20 @@ import Layout from "../components/layout"
 import "../../src/components/layout.css"
 
 
+
 const Email = () => {
+    
+            
+     
+      
     return (
         
             <Layout>            
-            <ContactUs />
+            <ContactUs />            
             </Layout>
         
     )
 }
 
 export default Email
+

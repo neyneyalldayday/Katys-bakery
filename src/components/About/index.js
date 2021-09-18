@@ -10,7 +10,7 @@ const About = () => {
         <p>we make cakes</p>                      
         <p>come eat some cakes</p>                      
         <div className="hero-btns">
-       <Button className="butt" fontBig  primary as={Link} to="/email">Contact me!</Button>
+       <Button className="butt" fontbig  primary as={Link} to="/email">Contact me!</Button>
         </div>
     </div>
     )

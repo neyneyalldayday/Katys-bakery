@@ -6,14 +6,14 @@ background: ${({ primary }) => (primary ? "#FF8080" : "#80aaff")};
 white-space: nowrap;
 padding: ${({ big }) => (big ? "16px 64px" : "10px 20px")};
 color: #fff;
-font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+font-size: ${({ fontbig }) => (fontbig ? "20px" : "16px")};
 outline: none;
 border: none;
 cursor: pointer;
 font-family: "Ubuntu", sans-serif;
 
 &:hover {
-    transiton: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     background: ${({ primary }) => (primary ? "#80aaff": "#FF8080")};
 }
 
