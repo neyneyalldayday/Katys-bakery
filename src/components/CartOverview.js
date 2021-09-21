@@ -29,7 +29,7 @@ const buttonStyles = {
               <p>Number of Items: {cartCount}</p>
               <p>Total: {formattedTotalPrice}</p>
 
-              <button
+              {/* <button
               style={buttonStyles}
               disabled={loading}
               onClick={() => {
@@ -38,7 +38,7 @@ const buttonStyles = {
               }}
               >
                 {loading ? 'Loading...' : 'Checkout'}
-              </button>
+              </button> */}
               <button style={buttonStyles} onClick={clearCart}>
                   Clear Cart
               </button>

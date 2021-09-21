@@ -156,10 +156,7 @@ const Navbar = () => {
                     </NavItem>
                     <NavItem>
                         <NavLinks to="/aboutpage">About</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks to="/shoppingcartpage">🛍 </NavLinks>
-                    </NavItem>
+                    </NavItem> 
 
                 </NavMenu>
             </NavbarContainer>
