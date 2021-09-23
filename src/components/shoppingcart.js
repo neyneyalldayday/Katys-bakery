@@ -19,7 +19,7 @@ const ShoppingCart = () => (
         <CartProvider
         mode="payment"
         cartMode="client-only"
-        stripe={"key"}
+        stripe={"pk_test_51JNN6MKUVY5Zu28JBbOULqZ8ynykj6ZXiBPlnYPnZ2RIjFGVwCvHnHGYFUxug0HiMlEJgZlIYUIz0Y4CXOFAwYGt00vZuxhWbx"}
         successUrl="https://stripe.com"
         cancelUrl="/"
         currency="USD"
