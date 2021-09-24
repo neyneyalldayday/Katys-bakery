@@ -26,10 +26,10 @@ export default (props) => (
             active
             currency
             unit_amount
-            product {
+            product {              
               id
-              name
-              images
+              name             
+              images               
             }
           }
         }

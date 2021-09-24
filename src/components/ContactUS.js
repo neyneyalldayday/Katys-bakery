@@ -47,14 +47,15 @@ export default function ContactUs() {
         <H1>Have Questions?</H1>
         <H1>email us!!</H1>
     <Form  onSubmit={sendEmail}>
+                <H3>🍮</H3>
             <Subject type="text" placeholder="Subject" name="subject" />
-                <label>Name</label>
+                <H3>🥧</H3>
                     <Name type="text" placeholder="Your name" name="name" />
-                    <label>Email</label>
+                    <H3>🧁</H3>
                     <EmailAddress type="email" placeholder="Email Address" name="email" />
-               <label>Message</label>
+               <H3>🍪</H3>
             <Textarea name="message" placeholder="Your message" />           
-            <input type="submit" value="Send Message"  />           
+            <input  type="submit" value="Send Message"  />                     
         </Form>       
            <H2>{showMessage ? <EmailMessage/>  : null  }</H2>                       
     </Section>                
@@ -126,6 +127,16 @@ padding-left: 10px;
 outline: none;
 border-radius: 2px;
 height: 40px;
+width: 60%;
+border: none;
+`;
+
+const H3 = styled.h3`
+display: block;
+padding-left: 10px;
+outline: none;
+border-radius: 2px;
+
 width: 60%;
 border: none;
 `;
