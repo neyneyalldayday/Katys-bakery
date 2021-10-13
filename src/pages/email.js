@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactUs from '../components/ContactUs'
+import ContactUs from '../../src/components/ContactUS'
 import Layout from "../components/layout"
 import "../../src/components/layout.css"
 
