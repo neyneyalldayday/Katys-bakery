@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import {IconContext} from "react-icons/lib";
-import {DiScala} from 'react-icons/Di';
+// import {DiScala} from 'react-icons/Di';
 import styled from 'styled-components';
 import {Link} from 'gatsby'
 
@@ -40,9 +40,9 @@ display: flex;
 align-items: center;
 `;
 
-const NavIcon = styled(DiScala)`
-margin: 0 0.5rem 0 2rem;
-`;
+// const NavIcon = styled(DiScala)`
+// margin: 0 0.5rem 0 2rem;
+// `;
 
 const MobileIcon = styled.div`
 display: none;
