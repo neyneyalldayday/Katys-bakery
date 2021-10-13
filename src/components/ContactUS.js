@@ -8,7 +8,7 @@ import "./ContactUs.css"
 
 
 
-export default function ContactUs() { 
+const ContactUs = () => { 
   const [showMessage, setShowMessage] = useState(false)
 
   
@@ -61,6 +61,8 @@ export default function ContactUs() {
     </Section>                
 </Container>
     )};
+
+    export default ContactUs
 
     const H1 = styled.h1`
 margin-left: 50%;
