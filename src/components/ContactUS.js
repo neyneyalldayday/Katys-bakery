@@ -45,7 +45,7 @@ const ContactUs = () => {
     <Container>
     <Section>
         <H1>Have Questions?</H1>
-        <H1>email us!!</H1>
+        <H1>email us!!</H1>       
     <Form  onSubmit={sendEmail}>
                 <H3>🍮</H3>
             <Subject type="text" placeholder="Subject" name="subject" />
@@ -55,28 +55,38 @@ const ContactUs = () => {
                     <EmailAddress type="email" placeholder="Email Address" name="email" />
                <H3>🍪</H3>
             <Textarea name="message" placeholder="Your message" />           
-            <input  type="submit" value="Send Message"  />                     
+            <input  type="submit" value="Send Message"  />           
         </Form>       
-           <H2>{showMessage ? <EmailMessage/>  : null  }</H2>                       
-    </Section>                
+        <H2>{showMessage ? <EmailMessage/>  : null  }</H2>                                       
+    </Section>                  
 </Container>
     )};
 
     export default ContactUs
 
     const H1 = styled.h1`
-margin-left: 50%;
+      text-align: center;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     margin: 2rem;
+     
+     
 `;
 
 const H2 = styled.h2`
-  margin-left: 50%;  
+     position: relative;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+
 `;
 
    
 
 const Section = styled.section`
-width: 100%;
-height: 100%;
+min-width: 100%;
+max-height: 100%;
 padding: 4rem 0rem;
 `;
 const Container = styled.div`
@@ -84,7 +94,7 @@ padding: 3rem calc((100vw - 1300px) / 2);
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 800px;
-background: #efe1fb;
+background: #CA8FB1;
 @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
 }
@@ -95,12 +105,13 @@ position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  height: 100%;
+  min-width: 90%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10rem;
 `;
 
 const Subject = styled.input`

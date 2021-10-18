@@ -16,6 +16,13 @@ const EmailMessage = () => {
 
 export default EmailMessage
 
-const Container = styled.div``;
-const Message = styled.div``;
+const Container = styled.div`
+height: 0;
+width: 0;
+
+`;
+const Message = styled.div`
+height: 0;
+width: 0;
+`;
 
