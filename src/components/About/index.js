@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Button } from '../ButtonElements';
 import "./About.css"; 
-import ContactUs from '../ContactUS';
+import ContactUs from '../ContactUs';
 
 const About = () => {
     const[click, setClick] = useState(false)
