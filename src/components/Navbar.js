@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import {IconContext} from "react-icons/lib";
-import {DiScala} from 'react-icons/Di';
+import {DiScala} from 'react-icons/di';
 import styled from 'styled-components';
 import {Link} from 'gatsby'
 
