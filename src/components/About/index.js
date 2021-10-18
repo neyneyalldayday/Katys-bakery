@@ -20,7 +20,7 @@ const About = () => {
 
     useEffect(() => {
         contactUs()
-        window.addEventListener("scroll", contactUs)
+        window.addEventListener(email , contactUs)
     }, [])
     return (
         <div className="about-container">
