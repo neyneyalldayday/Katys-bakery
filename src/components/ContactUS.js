@@ -8,7 +8,7 @@ import "./ContactUs.css"
 
 
 
-const ContactUs = () => { 
+export default function ContactUs()  { 
   const [showMessage, setShowMessage] = useState(false)
 
   
@@ -62,7 +62,7 @@ const ContactUs = () => {
 </Container>
     )};
 
-    export default ContactUs
+    
 
     const H1 = styled.h1`
       text-align: center;

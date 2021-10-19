@@ -3,6 +3,7 @@ import { Button } from '../ButtonElements';
 import "./About.css"; 
 import ContactUs from '../ContactUs';
 
+
 const About = () => {
     const[click, setClick] = useState(false)
     const[email, setEmail] = useState(false)
@@ -20,7 +21,7 @@ const About = () => {
 
     useEffect(() => {
         contactUs()
-        window.addEventListener(email , contactUs)
+        window.addEventListener("email" , contactUs)
     }, [])
     return (
         <div className="about-container">
@@ -30,7 +31,7 @@ const About = () => {
         <div className="hero-btns">
        <Button className="butt" fontbig="true"  primary="true" onClick={handleClick}>Contact me!</Button>
         </div>
-        <section>
+        <section active={email}>
         {click ? <ContactUs /> : null}
         </section>
     </div>
@@ -38,4 +39,6 @@ const About = () => {
 }
 
 export default About
+
+
 

@@ -28,7 +28,7 @@ function HeroSection() {
 
 
   const HeroContainer = styled.div`     
-    
+   background: #FCD3EB ; 
   display: flex;  
   justify-content: center;
   align-items: center;

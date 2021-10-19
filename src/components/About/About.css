@@ -37,6 +37,22 @@
 
 .butt {
     margin:3rem;
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero-btns {
+        justify-content: center;      
+        max-width: 10rem;
+    }
+    
+}
+@media screen and (max-width: 960px) {
+    .hero-btns {
+        justify-content: center;      
+        max-width: 10rem;
+    }
+    
 }
 
 @media screen and (max-width: 960px) {
