@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Button } from '../ButtonElements';
 import "./About.css"; 
-import ContactUs from '../ContactUs';
+import  ContactUs  from '../ContactUs.js';
 
 
 const About = () => {
