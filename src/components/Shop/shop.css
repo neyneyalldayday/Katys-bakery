@@ -4,6 +4,25 @@
     
 }
 
+.shop-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    
+}
+
+@media screen and (max-width: 768px) {
+    .shop-image-container {
+         display: grid;     
+        justify-content: center;
+        align-content: center;
+        margin: 2rem;
+    }
+    
+}
+
+
+
 .shop-container h1 {
     margin-bottom: 64px;
     
@@ -17,6 +36,7 @@
     margin: 0 auto;    
     min-width: 100%;
     padding: 0 32px;
+    
  }
 
  @media screen and (max-width: 768px) {
